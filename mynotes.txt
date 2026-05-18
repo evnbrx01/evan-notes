@@ -1,0 +1,80 @@
+Evan - Engineering Notes
+Project: FlightZone / Aurora Passenger Services
+Period: Q1-Q2 2026
+
+------------------------------------------------------------
+GENERAL TASKS
+------------------------------------------------------------
+
+- Review backend API response consistency
+- Optimize passenger booking endpoints
+- Improve request logging format
+- Add retry handling for failed API calls
+- Clean up unused middleware and legacy routes
+- Improve Docker image build times
+- Validate all environment variables before startup
+- Standardize JSON response structures
+
+------------------------------------------------------------
+FLIGHTZONE AI ATC CONSOLE
+------------------------------------------------------------
+
+- Move all operational validation logic to server-side only
+- Remove exposed internal identifiers from frontend bundles
+- Add mock ATC traffic generator for demo environment
+- Refactor websocket event handling for live console updates
+- Improve console performance during heavy simulated traffic
+- Separate admin routes from passenger routes
+- Review audit logging for ATC actions
+
+------------------------------------------------------------
+SECURITY NOTES
+------------------------------------------------------------
+
+- Avoid storing sensitive operational values in frontend code
+- Restrict internal control actions behind isolated validation layer
+- Remove debug responses from production builds
+- Add stricter request validation middleware
+- Implement rate limiting for all public API endpoints
+- Verify all logs avoid exposing sensitive environment values
+
+------------------------------------------------------------
+PASSENGER APP
+------------------------------------------------------------
+
+- Improve booking confirmation latency
+- Add seat-selection simulation endpoint
+- Create fake payment gateway responses for staging
+- Improve baggage tracking response format
+- Add loyalty-point transaction history endpoint
+- Add notification polling optimization
+
+------------------------------------------------------------
+INFRASTRUCTURE
+------------------------------------------------------------
+
+- Test Redis fallback behavior
+- Optimize nginx reverse proxy configuration
+- Validate health-check behavior under load
+- Improve CI/CD deployment rollback handling
+- Add automated staging cleanup workflow
+
+------------------------------------------------------------
+INTERNAL REMINDERS
+------------------------------------------------------------
+
+- Push latest API schema updates before Friday
+- Review Ananya frontend integration PR
+- Share websocket reconnection fix with Arav
+- Prepare infrastructure metrics for CEO review
+- Finalize monitoring dashboard alerts
+
+------------------------------------------------------------
+STATUS
+------------------------------------------------------------
+
+Current Focus:
+Backend stability, ATC demo isolation, and passenger service scaling.
+
+Priority Level:
+HIGH
